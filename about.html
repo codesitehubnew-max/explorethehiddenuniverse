@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="24702d09fc1790e05686e8f6ce586721be3f86be" content="24702d09fc1790e05686e8f6ce586721be3f86be" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Learn about CodeSiteHub, a space and astronomy website exploring facts, discoveries and theories about the universe.">
+
+<title>About | CodeSiteHub</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #02030a;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* BACKGROUND */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(0,191,255,.12),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(124,58,237,.13),
+            transparent 30%
+        );
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 25px 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.logo-title {
+    text-align: center;
+    flex: 1;
+}
+
+.logo-title h1 {
+    font-size: 46px;
+    letter-spacing: 4px;
+
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 25px #00bfff,
+        0 0 45px #7c3aed;
+}
+
+.logo-title p {
+    margin-top: 7px;
+    color: #94a3b8;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 45px;
+
+    padding: 17px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #080d2b,
+            #171452,
+            #32165f,
+            #171452,
+            #080d2b
+        );
+
+    border-top:
+        1px solid rgba(0,229,255,.3);
+
+    border-bottom:
+        1px solid rgba(124,77,255,.4);
+}
+
+nav a {
+    color: #dffaff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00e5ff;
+
+    text-shadow:
+        0 0 8px #00e5ff,
+        0 0 18px #00e5ff;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    text-align: center;
+
+    padding: 90px 20px 60px;
+}
+
+.hero h2 {
+    font-size: 58px;
+
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 30px #7c3aed;
+}
+
+.hero p {
+    max-width: 800px;
+
+    margin: 25px auto;
+
+    color: #cbd5e1;
+
+    line-height: 1.8;
+
+    font-size: 19px;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+
+    background:
+        rgba(255,255,255,.05);
+
+    border:
+        1px solid rgba(0,229,255,.15);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 0 25px rgba(0,191,255,.08);
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #00e5ff;
+
+    box-shadow:
+        0 0 30px rgba(0,229,255,.25);
+}
+
+.card h3 {
+    color: #61dafb;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #cbd5e1;
+
+    line-height: 1.7;
+}
+
+/* =========================================
+   MISSION
+========================================= */
+
+.mission {
+    max-width: 1000px;
+
+    margin: 70px auto;
+
+    padding: 40px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,191,255,.08),
+            rgba(124,58,237,.08)
+        );
+
+    border:
+        1px solid rgba(0,229,255,.2);
+}
+
+.mission h2 {
+    color: #61dafb;
+
+    margin-bottom: 20px;
+}
+
+.mission p {
+    color: #d1d5db;
+
+    line-height: 1.8;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    margin-top: 100px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: #080d18;
+
+    color: #94a3b8;
+
+    border-top:
+        1px solid rgba(0,229,255,.15);
+}
+
+footer strong {
+    color: #00e5ff;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:900px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 25px;
+    }
+
+    .logo-title h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   FLOATING SOLAR SYSTEM BUTTON
+========================================= */
+
+.home-btn {
+    position: fixed;
+
+    bottom: 80px;
+
+    right: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 14px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #00bfff,
+            #7c3aed
+        );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 0 15px rgba(0,191,255,.45),
+        0 0 30px rgba(124,58,237,.35);
+
+    transition: .3s ease;
+
+    z-index: 99999;
+}
+
+.home-btn:hover {
+    transform:
+        translateY(-5px)
+        scale(1.05);
+
+    box-shadow:
+        0 0 25px #00e5ff,
+        0 0 45px #7c3aed;
+}
+
+.home-btn:active {
+    transform: scale(.96);
+}
+
+/* =========================================
+   MOBILE SOLAR SYSTEM BUTTON
+========================================= */
+
+@media(max-width:600px) {
+
+    .home-btn {
+        bottom: 65px;
+
+        right: 18px;
+
+        padding: 12px 16px;
+
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <img src="Codesitehub.jpeg"
+         class="logo"
+         alt="CodeSiteHub Logo">
+
+    <div class="logo-title">
+        <h1>CodeSiteHub</h1>
+        <p>Facts & Theories</p>
+    </div>
+
+    <div style="width:80px;"></div>
+
+</header>
+
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+<section class="hero">
+
+    <h2>About CodeSiteHub</h2>
+
+    <p>
+        Exploring the universe through facts, discoveries,
+        scientific ideas and fascinating theories.
+    </p>
+
+</section>
+
+
+<section class="content">
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>🌌 Our Purpose</h3>
+
+            <p>
+                CodeSiteHub was created to make learning about space
+                easier, more interesting and accessible to everyone.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>🔭 What We Explore</h3>
+
+            <p>
+                From planets and galaxies to black holes, cosmic events
+                and theories about the universe, we explore fascinating
+                topics in astronomy and space science.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h3>🚀 Our Goal</h3>
+
+            <p>
+                Our goal is to encourage curiosity and help visitors
+                discover something new about the universe every time
+                they visit.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="mission">
+
+    <h2>🌠 Keep Looking Up</h2>
+
+    <p>
+        The universe is enormous, mysterious and still not completely
+        understood. New discoveries continue to change what we know.
+        CodeSiteHub aims to share interesting information while
+        encouraging visitors to remain curious and explore further.
+    </p>
+
+</section>
+
+<a href="Codesitehub1.html" class="home-btn">
+    🌌 Solar System
+</a>
+
+
+<footer>
+    © 2026 <strong>CodeSiteHub</strong> | Facts & Theories
+</footer>
+
+</body>
+</html>

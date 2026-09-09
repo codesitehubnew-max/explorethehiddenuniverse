@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="24702d09fc1790e05686e8f6ce586721be3f86be" content="24702d09fc1790e05686e8f6ce586721be3f86be" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Universe</title>
+
+<style>
+
+   /* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    width: 100%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 25px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* =========================================================
+   CODESITEHUB LOGO
+========================================================= */
+
+.logo-container {
+    width: 95px;
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.logo-container img {
+    width: 95px;
+    height: 95px;
+
+    object-fit: contain;
+
+    border-radius: 0;
+
+    filter: none;
+
+    transition: none;
+
+    float: none;
+
+    border: none;
+
+    margin: 0;
+}
+.logo-container img:hover {
+    transform: none;
+    filter: none;
+}
+
+
+/* =========================================================
+   MAIN HEADER TITLE
+========================================================= */
+
+.site-title {
+    flex: 1;
+
+    margin: 0;
+
+    text-align: center;
+
+    font-size: 52px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 25px #00bfff,
+        0 0 45px #7c3aed;
+
+    animation: titleGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+
+    from {
+        text-shadow:
+            0 0 8px #00bfff,
+            0 0 18px #00bfff;
+    }
+
+    to {
+        text-shadow:
+            0 0 15px #00e5ff,
+            0 0 35px #00e5ff,
+            0 0 55px #7c3aed;
+    }
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+nav {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 45px;
+
+    margin: 10px 0 30px;
+
+    padding: 16px 25px;
+
+    background: linear-gradient(
+        90deg,
+        #080d2b 0%,
+        #171452 35%,
+        #32165f 50%,
+        #171452 65%,
+        #080d2b 100%
+    );
+
+    border-top: 1px solid rgba(0, 229, 255, 0.35);
+
+    border-bottom: 1px solid rgba(124, 77, 255, 0.45);
+
+    box-shadow:
+        0 0 15px rgba(0, 191, 255, 0.15),
+        0 0 35px rgba(124, 77, 255, 0.12);
+
+    position: relative;
+}
+
+
+/* Futuristic line */
+
+nav::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -2px;
+
+    left: 20%;
+
+    right: 20%;
+
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #00e5ff,
+        #7c4dff,
+        #00e5ff,
+        transparent
+    );
+
+    box-shadow:
+        0 0 8px #00e5ff,
+        0 0 15px #7c4dff;
+}
+
+
+/* Navigation links */
+
+nav a {
+    position: relative;
+
+    color: #dffaff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    padding: 8px 15px;
+
+    transition: 0.3s;
+}
+
+
+/* Navigation hover */
+
+nav a:hover {
+    color: #00e5ff;
+
+    text-shadow:
+        0 0 8px #00e5ff,
+        0 0 18px #00e5ff;
+
+    transform: translateY(-2px);
+}
+
+
+/* Link underline */
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #00e5ff;
+
+    box-shadow: 0 0 8px #00e5ff;
+
+    transform: translateX(-50%);
+
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 80%;
+}
+
+
+/* =========================================================
+   SECTION TITLES
+   THEORY + FACTS
+========================================================= */
+
+.section-title {
+    display: block;
+
+    width: 100%;
+
+    margin: 60px auto 35px;
+
+    padding: 0;
+
+    text-align: center;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    font-family: 'Orbitron', sans-serif;
+
+    color: #ffffff;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    background: none !important;
+
+    text-shadow:
+        0 0 5px #00bfff,
+        0 0 10px #00bfff,
+        0 0 20px #00bfff,
+        0 0 40px #00bfff,
+        0 0 70px #7c3aed;
+
+    animation: sectionGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes sectionGlow {
+
+    from {
+        text-shadow:
+            0 0 5px #00bfff,
+            0 0 15px #00bfff,
+            0 0 25px #7c3aed;
+    }
+
+    to {
+        text-shadow:
+            0 0 10px #00e5ff,
+            0 0 25px #00e5ff,
+            0 0 45px #7c3aed,
+            0 0 65px #7c3aed;
+    }
+}
+
+
+/* =========================================================
+   THEORY MAIN HEADING
+========================================================= */
+
+body > h1 {
+    text-align: center;
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    background: transparent;
+
+    margin: 20px auto 25px;
+
+    max-width: 1100px;
+}
+
+
+/* =========================================================
+   THEORY PARAGRAPH
+========================================================= */
+
+body > p {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+    text-align: center;
+
+    font-size: 19px;
+
+    line-height: 1.9;
+
+    color: #d8e6ff;
+}
+
+
+/* =========================================================
+   CENTER IMAGE
+   TIME TRAVEL IMAGE
+========================================================= */
+
+.center-image {
+    width: 100%;
+
+    text-align: center;
+
+    margin: 45px 0;
+
+    clear: both;
+}
+
+.center-image img {
+    width: 800px;
+    max-width: 95vw;
+    height: auto;
+    object-fit: contain;
+
+    display: inline-block;
+    float: none;
+    border: none;
+    margin: 0;
+
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   FACT ROW
+========================================================= */
+
+.fact-row {
+
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 90px auto;
+
+    padding: 0 60px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+
+/* =========================================================
+   ALTERNATING LAYOUT
+========================================================= */
+
+/*
+   FACT 1
+   TEXT LEFT | IMAGE RIGHT
+
+   FACT 2
+   IMAGE LEFT | TEXT RIGHT
+
+   FACT 3
+   TEXT LEFT | IMAGE RIGHT
+
+   FACT 4
+   IMAGE LEFT | TEXT RIGHT
+*/
+
+.fact-row:nth-child(odd) {
+    flex-direction: row;
+}
+
+.fact-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================================================
+   FACT TEXT
+========================================================= */
+
+.fact-text {
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   SMALL FACT HEADINGS
+   NO GLOW
+========================================================= */
+
+.fact-text h3,
+.fact-text h4 {
+
+    margin: 0 0 20px 0;
+
+    padding: 0;
+
+    font-size: 30px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+    color: #ffffff !important;
+
+    background: transparent !important;
+
+    text-align: left;
+
+    text-shadow: none !important;
+
+    animation: none !important;
+}
+
+
+/* =========================================================
+   FACT TEXT
+========================================================= */
+
+.fact-text p {
+
+    margin: 0;
+
+    padding: 0;
+
+    max-width: none;
+
+    text-align: left;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #d8e6ff;
+
+    background: transparent;
+
+}
+
+
+/* =========================================================
+   FACT IMAGE (FULL IMAGE - NO CROPPING)
+========================================================= */
+
+.fact-image {
+    flex: 0 0 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-image img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: contain;
+    margin: auto;
+}
+
+/* Keep image static on hover */
+
+.fact-image img:hover {
+    transform: none;
+    box-shadow: 0 0 15px rgba(0,191,255,.25);
+}
+
+
+/* =========================================================
+   EXPLORE UNIVERSE BUTTON
+========================================================= */
+
+.space-btn {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-block;
+
+    padding: 18px 55px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    border: 2px solid #4fd1ff;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 0 10px #00bfff,
+        0 0 25px #00bfff,
+        inset 0 0 15px rgba(255, 255, 255, 0.15);
+
+    transition: 0.4s;
+
+    overflow: hidden;
+}
+
+
+.space-btn::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300%;
+
+    height: 300%;
+
+    top: -100%;
+
+    left: -100%;
+
+    background: conic-gradient(
+        transparent,
+        #00e5ff,
+        transparent,
+        #7c4dff,
+        transparent
+    );
+
+    animation: rotate 4s linear infinite;
+
+    z-index: -2;
+}
+
+
+.space-btn::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 3px;
+
+    background: #051222;
+
+    border-radius: 50px;
+
+    z-index: -1;
+}
+
+
+@keyframes rotate {
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.space-btn:hover {
+
+    transform: translateY(-6px) scale(1.08);
+
+    box-shadow:
+        0 0 20px #00e5ff,
+        0 0 50px #00e5ff,
+        0 0 80px #7c4dff;
+
+    color: #9ffcff;
+}
+
+
+.space-btn:active {
+
+    transform: scale(0.96);
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   GALAXY GIF
+========================================================= */
+
+.container img {
+
+    display: block;
+
+    max-width: 100%;
+
+    height: auto;
+
+    float: none;
+
+    border: none;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background-color: #101827;
+
+    color: #ecf0f1;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    width: 100%;
+
+    margin-top: 100px;
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .site-header {
+
+        padding: 25px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .logo-container {
+
+        width: 80px;
+
+        height: 80px;
+    }
+
+
+    .logo-container img {
+
+        width: 80px;
+
+        height: 80px;
+    }
+
+
+    .site-title {
+
+        font-size: 42px;
+
+        letter-spacing: 2px;
+    }
+
+
+    nav {
+
+        gap: 10px;
+
+        flex-wrap: wrap;
+    }
+
+
+    nav a {
+
+        font-size: 16px;
+
+        padding: 8px 12px;
+    }
+
+
+    .section-title {
+
+        font-size: 38px;
+
+        letter-spacing: 3px;
+    }
+
+
+    body > h1 {
+
+        font-size: 34px;
+
+        padding: 0 20px;
+    }
+
+
+    body > p {
+
+        font-size: 17px;
+
+        line-height: 1.8;
+    }
+
+
+    /* FACTS */
+
+    .fact-row,
+    .fact-row:nth-child(odd),
+    .fact-row:nth-child(even) {
+
+        flex-direction: column;
+
+        padding: 0 25px;
+
+        gap: 30px;
+
+        margin: 60px auto;
+    }
+
+
+    .fact-text {
+
+        width: 100%;
+    }
+
+
+    .fact-text h3,
+    .fact-text h4 {
+
+        text-align: center;
+
+        font-size: 26px;
+
+        text-shadow: none !important;
+    }
+
+
+    .fact-text p {
+
+        text-align: left;
+
+        font-size: 17px;
+
+        line-height: 1.8;
+    }
+
+
+    .fact-image {
+
+        width: 100%;
+
+        flex: none;
+    }
+
+
+    .fact-image img {
+
+        width: 100%;
+
+        max-width: 500px;
+
+        height: auto;
+
+        margin: auto;
+    }
+
+
+    .center-image img {
+
+        width: 90vw;
+
+        height: auto;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .site-title {
+
+        font-size: 30px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .logo-container {
+
+        width: 70px;
+
+        height: 70px;
+    }
+
+
+    .logo-container img {
+
+        width: 70px;
+
+        height: 70px;
+    }
+
+
+    nav {
+
+        gap: 5px;
+    }
+
+
+    nav a {
+
+        font-size: 14px;
+
+        padding: 7px 10px;
+    }
+
+
+    .section-title {
+
+        font-size: 30px;
+
+        letter-spacing: 2px;
+
+        margin-top: 45px;
+    }
+
+
+    body > h1 {
+
+        font-size: 27px;
+    }
+
+
+    body > p {
+
+        font-size: 16px;
+
+        padding: 0 15px;
+    }
+
+
+    .fact-row {
+
+        padding: 0 15px;
+
+        margin: 50px auto;
+    }
+
+
+    .fact-text h3,
+    .fact-text h4 {
+
+        font-size: 23px;
+
+        text-shadow: none !important;
+    }
+
+
+    .fact-text p {
+
+        font-size: 16px;
+    }
+
+
+    .space-btn {
+
+        padding: 15px 30px;
+
+        font-size: 16px;
+    }
+}
+
+.theory-text {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto 40px auto;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.9;
+    color: #d8e6ff;
+    padding: 0 20px;
+}
+
+.theory-heading {
+    width: 100%;
+    margin: 20px auto 25px auto;
+    padding: 0 20px;
+
+    text-align: center !important;
+
+    font-size: 42px;
+    line-height: 1.3;
+
+    color: #ffffff !important;
+    background: transparent !important;
+
+    display: block;
+}
+/* Disable hover effect on ALL images */
+img {
+    transform: none !important;
+    transition: none !important;
+}
+
+img:hover {
+    transform: none !important;
+    scale: 1 !important;
+}
+/* =================================
+   STATIC IMAGE GLOW
+================================= */
+
+img {
+    transform: none !important;
+    scale: 1 !important;
+    transition: none !important;
+
+    /* Static glow */
+    filter: drop-shadow(0 0 8px #00bfff)
+            drop-shadow(0 0 18px #7c4dff);
+}
+
+/* Keep exactly the same on hover */
+img:hover {
+    transform: none !important;
+    scale: 1 !important;
+    filter: drop-shadow(0 0 8px #00bfff)
+            drop-shadow(0 0 18px #7c4dff);
+}
+
+/* =========================================
+   FLOATING HOME BUTTON
+========================================= */
+
+.home-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 14px 18px;
+
+    background: linear-gradient(135deg, #00bfff, #7c3aed);
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 0 15px rgba(0,191,255,.45),
+        0 0 30px rgba(124,58,237,.35);
+
+    transition: .3s ease;
+
+    z-index: 99999;
+}
+
+.home-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 0 25px #00e5ff,
+        0 0 45px #7c3aed;
+}
+
+.home-btn:active {
+    transform: scale(.96);
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+    .home-btn{
+
+        bottom:65px;
+        right:18px;
+
+        padding:12px 16px;
+
+        font-size:14px;
+    }
+
+}
+
+  </style>
+</head>
+<body> 
+
+<header class="site-header">
+    <div class="logo-container">
+    <img src="Codesitehub.jpeg" alt="CodeSiteHub Logo">
+</div>
+
+    <h1 class="site-title">Facts &amp; Theories</h1>
+
+    <div style="width:95px;"></div>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+  <br><br>
+
+<div class="section-title">🌀 THEORY</div>
+
+<h1>🌀 What If the Universe Already Knows Your Future?</h1>
+       <p>Have you ever wondered what would happen if time travel were possible? Imagine being able to see the future, revisit the past, or even meet another version of yourself. It sounds like something from a movie, but the idea has fascinated scientists for decades. Interestingly, modern physics shows that time isn't as simple as it seems. According to Einstein's theory of relativity, time can actually move slower under certain conditions, such as near a black hole or at extremely high speeds. This effect has been proven through scientific experiments, although only on a very small scale. Some scientists have also proposed the existence of wormholes—mysterious tunnels that could connect different points in space and time. While there is no evidence that humans can travel through time, the possibility continues to spark curiosity around the world. Could the future already exist? Could time be more than just a straight line? For now, nobody knows the answer, making time travel one of the greatest mysteries of the universe.</p>
+    
+       <div class="center-image">
+    <img src="Time Travel.png" width="600" height="450">
+</div>
+
+    <br><br>
+
+    <h7 class="section-title">🌀 FACTS</h7>
+
+<main>
+
+    <!-- FACT 1 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>☀️ The Sun Is Moving Through The Milky Way</h3>
+
+            <p>
+                Did you know that the Sun isn't just sitting still in space?
+                While all the planets orbit around the Sun, the Sun itself is also moving.
+
+                Our entire Solar System, including Earth, is traveling around the center
+                of the Milky Way galaxy at an incredible speed of about 828,000 km/h.
+
+                Even though that's extremely fast, the Milky Way is so huge that it still
+                takes the Sun around 225 to 250 million years to complete one full trip
+                around the galaxy.
+
+                Scientists call this journey a galactic year. Since Earth formed about
+                4.5 billion years ago, the Solar System has completed only around
+                20 galactic years.
+
+                A lot of people imagine the Sun staying in one place while everything
+                else moves around it, but in reality, the whole Solar System is constantly
+                traveling through space together.
+            </p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Sun is not stationary.png" alt="Sun moving through the Milky Way">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 2 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>🌕 The Moon Isn't a Planet — It's Earth's Natural Companion</h4>
+
+          <p>
+The Moon is not a planet or a star. It is Earth's only natural satellite, which means it naturally orbits Earth because of gravity. Even though the Moon is much smaller than Earth, its gravitational pull has a major effect on our planet, especially on the oceans.
+
+The Moon's gravity is mainly responsible for the rise and fall of ocean tides. As the Moon moves around Earth, its gravity pulls on the oceans, creating high and low tides in different parts of the world. The Moon also helps keep Earth's axis relatively stable, which has an important effect on our climate over very long periods.
+
+The Moon takes about 27.3 days to complete one orbit around Earth. It is called a natural satellite because it formed naturally and orbits a planet. The Moon has been closely connected with Earth for billions of years and continues to play an important role in the way our planet behaves.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Moon is the natural satellite.jpeg" alt="The Moon Isn't a Planet — It's Earth's Natural Companion">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 3 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>🌌 Something Invisible Is Pulling the Milky Way Across the Universe</h3>
+
+           <p>
+The Milky Way is not staying in one place in space. Our entire galaxy is moving through the universe at an incredible speed of about 2.2 million kilometers per hour, or roughly 600 kilometers per second. Astronomers have discovered that the Milky Way and many nearby galaxies are being influenced by the gravity of a huge region known as the Great Attractor.
+
+The Great Attractor is located roughly 150 to 250 million light-years away from Earth. It is not a giant black hole, as some people might imagine. Instead, it is a large region containing enormous amounts of matter, including many galaxies and dark matter. The combined gravity of all this matter affects the movement of galaxies across a huge area of space.
+
+The Great Attractor is difficult to observe directly because it lies in a direction partly hidden behind the dense stars, gas, and dust of the Milky Way. However, astronomers can study the movement of galaxies and use their motion to understand the gravitational influence of this region.
+
+The Milky Way is therefore part of a much larger cosmic movement. Our galaxy, along with many other galaxies, is traveling through space under the influence of gravity from massive structures throughout the universe.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Great Attractor.jpeg" alt="Great Pyramid of Giza">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 4 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>🌍 The Earth Isn't a Perfect Sphere—Its Real Shape May Surprise You</h4>
+
+            <p>
+Earth may look like a perfect sphere when we see pictures of it from space, but its actual shape is more complicated. Scientists describe Earth's overall shape as a geoid, which is similar to a slightly uneven and flattened sphere. This shape is influenced by Earth's rotation, gravity, and the way mass is distributed throughout the planet.
+
+Earth is slightly wider around the equator because of its rotation, while it is somewhat flattened at the North and South Poles. These differences are small, so Earth still looks almost completely round when viewed from space.
+
+Earth's surface is also far from perfectly smooth. Mountains, valleys, ocean trenches, and other natural features create differences in the shape of the planet. Even if all the oceans were removed, Earth would still have a rocky and uneven surface rather than becoming a perfectly smooth sphere.
+
+Another interesting fact is that Earth's gravity is not exactly the same everywhere. It changes slightly depending on factors such as altitude, location, and the amount of mass beneath the surface. These small differences in gravity are one of the reasons scientists use the term geoid when describing Earth's real shape.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Shape of Earth.jpeg" alt="D.B. Cooper">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 5 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>⭐ A Dead Star Spins Hundreds of Times Every Second—and Never Misses a Beat</h3>
+
+            <p>
+A pulsar is a special type of neutron star that can spin incredibly fast. A neutron star is the extremely dense core left behind when a massive star reaches the end of its life and explodes in a powerful supernova. After the explosion, the remaining material is compressed into a tiny but incredibly massive object.
+
+Some pulsars can rotate hundreds of times every second. As they spin, they produce powerful beams of radio waves and other forms of radiation from areas around their magnetic poles. These beams sweep through space as the pulsar rotates, similar to the rotating light from a lighthouse.
+
+When one of these beams points toward Earth, telescopes can detect the radiation as a regular pulse. Because the pulses can arrive at extremely precise intervals, pulsars can act like natural cosmic clocks. Astronomers use them to study stars, gravity, and the conditions found in extreme parts of the universe.
+
+What makes pulsars even more remarkable is their size and density. A typical neutron star may be only about 20 kilometers across, yet it can contain more mass than the Sun. Some of the fastest pulsars are known to rotate more than 700 times per second, making them some of the most rapidly spinning objects known in the universe.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="A Dead Star.jpeg" alt="Area 51">
+        </div>
+
+    </div>
+</div>
+
+    <div class="section-title">🌀 THEORY</div>
+
+<h1 class="theory-heading">
+    ⚪ White Holes: A Theoretical Possibility
+</h1>
+       <p class="theory-text">
+A white hole is a theoretical object that comes from the mathematics of Einstein's General Theory of Relativity. It is often described as the opposite of a black hole. While a black hole pulls matter and light inward, a white hole would work in the opposite way, allowing matter and light to come out while preventing anything from outside from entering.
+
+Scientists have never observed a white hole, so there is currently no evidence that they actually exist. They remain a theoretical idea that physicists study to better understand gravity, spacetime, and how the universe works.
+
+Some theories suggest that black holes and white holes could possibly be connected. One idea is that matter entering a black hole might eventually emerge from a white hole somewhere else. However, there is currently no scientific proof that this happens.
+
+For now, white holes remain hypothetical objects rather than confirmed parts of the universe. Even though they have never been observed, they are still an interesting subject in theoretical physics and may help scientists explore some of the biggest questions about space, time, and gravity.
+</p>
+    
+       <div class="center-image">
+    <img src="White Hole.png" width="600" height="450">
+</div>
+
+<div class="section-title">🌀 FACTS</div>
+
+    <!-- FACT 6 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>🌌 The Loneliest Place in the Universe Is Bigger Than You Can Imagine</h4>
+
+            <p>
+The Boötes Void is one of the largest known regions of space with very few galaxies. It is often described as a cosmic void because, compared with the areas around it, there is an unusually small number of galaxies spread across this enormous region. It was discovered by astronomers in 1981 and has become one of the most interesting examples of the large-scale structure of the universe.
+
+The Boötes Void is estimated to be about 330 million light-years across. To understand how enormous that is, light itself would need roughly 330 million years to travel from one side of the void to the other. Since light travels faster than anything else we know of, this gives an idea of just how incredibly large the region is.
+
+The void is not completely empty. Astronomers have found a small number of galaxies inside it, but they are much less common than they would normally expect in such a large area of space. Most of the region contains extremely low amounts of matter compared with the surrounding cosmic structures.
+
+Scientists believe that cosmic voids formed as gravity caused matter to gather into galaxies, galaxy groups, and huge clusters over billions of years. As these structures developed, some regions were left with much less matter. The Boötes Void is an especially large example, and scientists continue to study it to better understand how the universe developed on the largest scales.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Loneliest place in the Universe.jpeg" alt="Grandfather Paradox">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 7 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>👁️ This Giant Eye in Space Is Actually the Remains of a Dead Star</h3>
+
+            <p>
+The Helix Nebula is one of the most famous planetary nebulae in the night sky. It is located about 650 light-years from Earth in the constellation Aquarius. Its unusual shape and bright colors make it look like a giant eye when viewed through a telescope, which is why it is sometimes given the nickname "The Eye of God."
+
+The Helix Nebula formed when a star similar to our Sun reached the final stages of its life. Instead of ending in a massive explosion, the star slowly pushed its outer layers of gas into surrounding space. This material spread out and formed the large glowing clouds that we can see today.
+
+At the center of the nebula is a white dwarf. This is the extremely hot and dense core that remains after the star has lost its outer layers. The energy from the white dwarf causes the surrounding gas to glow, creating the bright colors and patterns seen in photographs of the nebula.
+
+The Helix Nebula is called a planetary nebula, but the name can be misleading because it has nothing to do with planets. The term was given to these objects by early astronomers because some of them looked similar to planets through the telescopes of that time. The Helix Nebula is actually the remains of a dying Sun-like star, surrounded by expanding clouds of gas and dust.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Giant eye.jpeg" alt="Déjà vu">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 8 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>☀️ The Sun Will One Day Destroy the Inner Solar System</h4>
+
+            <p>
+The Sun has been shining for about 4.6 billion years, but it will not remain the same forever. Like other stars, the Sun will eventually use up the hydrogen fuel in its core. This will cause major changes to the star and eventually transform the entire inner Solar System.
+
+In about 5 billion years, the Sun is expected to expand into a red giant. During this stage, its outer layers will grow enormously, becoming much larger than they are today. Mercury and Venus are expected to be engulfed by the expanding Sun. Scientists are still studying exactly what will happen to Earth, but the planet will become far too hot for life to survive long before the Sun reaches its maximum size.
+
+As the Sun reaches the later stages of its life, it will lose its outer layers and release them into space. These layers will form a glowing cloud of gas known as a planetary nebula. The name can be confusing because planetary nebulae are not formed from planets; they are created from the material released by dying stars.
+
+After the Sun has lost most of its outer material, the hot core that remains will become a white dwarf. It will no longer produce energy through normal hydrogen fusion like the Sun does today, but it will remain extremely hot for a very long time and slowly cool down over billions of years.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Sun will destroy the solar system.jpeg" alt="Quantum Computing">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 9 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>🌌 Space Isn't Always the Colorful World You See in Pictures</h3>
+
+            <p>
+Many of the amazing and colorful pictures of space that we see online do not always show exactly what the human eye would see. This is because our eyes can detect only a small part of the electromagnetic spectrum. Telescopes can detect other types of light, including infrared, ultraviolet, radio waves, and X-rays, which are invisible to us.
+
+Scientists often use colors to represent these invisible types of light. They may also increase certain colors in an image to make faint details easier to see. These are known as false-color or enhanced-color images. The colors are not simply made up for decoration. They are used to help scientists understand information that would otherwise be difficult to see.
+
+The Sun is a good example of how space can look different depending on where you observe it. When viewed from space, the Sun appears essentially white because it produces light across the visible spectrum. From Earth, however, sunlight passes through our atmosphere, which scatters different wavelengths of light. Because of this, the Sun can appear yellow, orange, or red, especially when it is close to the horizon during sunrise or sunset.
+
+Planets can also appear different depending on how their images are captured and processed. Jupiter naturally has bands with different colors, but spacecraft images may be enhanced to make small details in its atmosphere easier to study. Mars has a naturally reddish appearance because of iron-rich dust on its surface, although scientists may process images differently depending on what they want to investigate.
+
+Neptune appears blue because methane in its atmosphere absorbs much of the red light. However, some images of Neptune have been enhanced to make atmospheric features easier to observe. Nebulae and galaxies are also often shown in bright and dramatic colors because different colors can represent different wavelengths of light or different chemical elements.
+
+This means that a colorful space image is not necessarily fake. In many cases, the colors are a scientific way of showing real information that our eyes cannot see. When you look at a colorful nebula or galaxy in a photograph, you may be seeing a visual translation of real data collected by a telescope rather than exactly what the object would look like to the human eye.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Space isn't always the colorful.jpeg" alt="SpaceX reusable rocket">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 10 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>🌍 Before the Moon, Earth May Have Had Rings Like Saturn</h4>
+
+           <p>
+Billions of years ago, the young Earth may have looked very different from the planet we know today. One leading scientific idea suggests that a giant object collided with Earth during the early stages of the Solar System. This enormous impact could have thrown large amounts of rock and other debris into space around our planet.
+
+Scientists have proposed that some of this material may have formed a temporary ring around Earth. It would have been somewhat similar to the rings we see around Saturn today, although there is still uncertainty about how long such a ring could have lasted and what exactly it looked like.
+
+Over time, gravity could have caused some of the debris in this ring to come together. As the pieces collided and gradually combined, they may have eventually formed the Moon. This idea is closely connected to the giant-impact hypothesis, which is one of the leading explanations for how the Moon formed.
+
+The giant-impact hypothesis has strong scientific support, but scientists are still studying the exact events that followed the collision. The idea that Earth definitely had a Saturn-like ring is not a confirmed fact. It is a possible part of the Moon's formation story, and researchers continue to investigate how the debris around early Earth may have developed into the Moon we see today.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Earth rings before noon.jpeg"
+                 alt="Artificial Intelligence in Space Exploration">
+        </div>
+
+    </div>
+
+     <div class="section-title">🌀 THEORY</div>
+
+<h1 class="theory-heading">
+    🕳️⭐ A Star-Like Object May Be Hiding a Giant Black Hole Inside
+</h1>
+       <p class="theory-text">
+Astronomers using the James Webb Space Telescope have studied an extremely distant object called MoM-BH-1*, which is one of the mysterious little red dots found in the early universe.
+
+The object looks very compact and bright, almost like a star. However, scientists have proposed that a rapidly growing black hole could be hiding inside it.
+
+According to this idea, the black hole may be surrounded by an enormous cloud of extremely hot gas. This gas could make the object appear star-like from the outside while the black hole powers its huge energy output.
+
+Scientists estimate that the object could be producing an incredible amount of energy, possibly around 100 billion times the energy produced by the Sun. The surrounding gas may also extend across a region comparable in size to our Solar System.
+
+However, the black-hole explanation is still a scientific hypothesis and has not been confirmed. If the idea is correct, objects like this could help scientists understand how massive black holes formed when the universe was still very young.
+</p>
+    
+       <div class="center-image">
+    <img src="A Star Like Object may be Hiding a Giant Black Hole Insdie.png" width="600" height="450">
+</div>
+
+<br><br>
+
+    <h7 class="section-title">🌀 FACTS</h7>
+
+<main>
+
+    <!-- FACT 11 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>🧊 A Moon With an Ocean Hidden Beneath Its Ice</h3>
+
+            <p class="fact-text">
+Europa is one of Jupiter's largest moons and looks like a frozen world covered by a thick layer of ice.
+
+But beneath its icy surface, scientists have strong evidence that a huge ocean of liquid water exists.
+
+This hidden ocean may contain more than twice as much water as all of Earth's oceans combined.
+
+Liquid water is one of the important ingredients needed for life as we know it, which is why Europa has become one of the most interesting places in our Solar System to study.
+
+Scientists have not discovered any life on Europa so far.
+
+However, the combination of liquid water and other conditions makes Europa a promising place to search for environments that could potentially support life beyond Earth.
+
+Future spacecraft and observations may help scientists learn more about what is happening beneath Europa's frozen surface.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Moon with hidden Ocean.jpeg" alt="Sun moving through the Milky Way">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 12 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>🌍 4,000 Light-Years Away, Scientists Found a World That Looks Like a Future Earth</h4>
+
+         <p class="fact-text">
+About 4,000 light-years away, astronomers have discovered a rocky exoplanet called KMT-2020-BLG-0414.
+
+What makes this planet especially interesting is that it orbits a white dwarf, which is the leftover core of a star that has reached the end of its normal life.
+
+The planet is roughly the size of Earth and orbits its white dwarf at about twice the distance that Earth currently orbits the Sun.
+
+Scientists believe this distant system could give us an idea of what our own Solar System might look like billions of years from now, after the Sun has gone through its later stages of evolution and eventually become a white dwarf.
+
+However, there is no evidence so far that the planet has liquid water or supports life.
+
+Even so, studying this system gives astronomers a fascinating opportunity to understand how rocky planets can survive around stars that have reached the end of their lives.
+
+It also provides a possible glimpse into the distant future of our own Solar System.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="4000 years away discover the future earth.jpeg".png" alt="The Moon">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 13 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>🪐 Saturn Could Float on a Giant Ocean of Water</h3>
+
+         <p class="fact-text">
+Saturn is the least dense planet in our Solar System, with an average density of about 0.69 grams per cubic centimeter.
+
+For comparison, water has a density of about 1 gram per cubic centimeter. This means that, in a purely theoretical situation, Saturn would be able to float if it could somehow be placed in an enormous ocean.
+
+However, this does not mean that Saturn is small or has very little mass.
+
+Saturn actually has more than 95 times the mass of Earth. Its low average density comes mainly from its enormous size and its composition, which is mostly hydrogen and helium.
+
+The idea of Saturn floating is therefore a thought experiment based on its average density.
+
+There is obviously no ocean large enough to hold Saturn, and a normal ocean could not actually contain the planet.
+
+The interesting fact is that despite being an enormous planet with a huge amount of mass, Saturn has an average density lower than that of water.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Saturn could flot.jpeg" alt="Great Pyramid of Giza">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 14 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>🚀 The Human-Made Object That Is Leaving Our Solar System</h4>
+
+         <p>
+NASA launched Voyager 1 on September 5, 1977, to explore the outer Solar System. After passing Jupiter and Saturn, it continued traveling away from Earth. In 2012, it crossed the heliopause and entered interstellar space, becoming the first human-made object to do so. It is now the farthest human-made object from Earth.
+
+Voyager 1 carries the Golden Record, a gold-plated disc containing pictures, sounds, music and greetings from Earth in 55 languages. It even includes greetings in several Indian languages, including Hindi and Marathi.
+
+The spacecraft also captured the famous Pale Blue Dot image, showing Earth as a tiny point from billions of kilometres away. Voyager 1 is not heading toward a particular planet; it is simply continuing its journey through interstellar space.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Voyager 1.jpeg" alt="D.B. Cooper">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 15 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>🧊👽 Saturn Has a Moon That Shoots Its Hidden Ocean Into Space</h3>
+
+            <p>
+Enceladus is one of Saturn's moons and looks like a frozen world, but beneath its icy surface is a large ocean of salty liquid water. Near its south pole, cracks in the ice send water vapor and tiny ice particles into space. NASA's Cassini spacecraft flew through these plumes and studied what they contained.
+
+Scientists found water, salts, carbon dioxide, methane, ammonia, organic compounds and hydrogen. Phosphorus has also been detected in the ice, which is an important element for life on Earth.
+
+There is also evidence that Enceladus may have hot water interacting with rocks beneath its ocean. This could provide chemical energy that some microorganisms might be able to use. No life has been discovered there, but the moon has several ingredients and conditions that could possibly support life.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="One of Saturn moon with hidden Ocean.jpeg" alt="Area 51">
+        </div>
+
+    </div>
+</div>
+
+    <div class="section-title">🌀 THEORY</div>
+
+<h1 class="theory-heading">
+    💥 The Big Bang Wasn't an Explosion — It Was the Beginning of an Expanding Universe
+</h1>
+       <p class="theory-text">
+The Big Bang theory explains how our Universe developed from an extremely hot and dense early state about 13.8 billion years ago. It was not a huge explosion sending matter into empty space. Instead, space itself began expanding, and as it expanded, the Universe gradually cooled.
+
+In the beginning, the Universe was extremely hot and dense. As it expanded and cooled, tiny particles began to form. During the first few minutes, conditions became suitable for the formation of light elements such as hydrogen and helium.
+
+For hundreds of thousands of years, the Universe remained filled with hot plasma, and light could not travel freely. About 380,000 years after the Big Bang, the Universe had cooled enough for atoms to form. This allowed light to travel through space, and that ancient light can still be detected today as the Cosmic Microwave Background.
+
+After this period, the Universe entered what scientists call the Cosmic Dark Ages. There were no stars yet, and space was mostly filled with hydrogen and helium gas. Over time, gravity slowly pulled areas of gas together until the first stars were born.
+
+The first stars were very different from the stars we see today. They were made mostly of hydrogen and helium because heavier elements had not yet been created. Inside these stars, nuclear fusion produced heavier elements, and when massive stars died, many of those elements were released into space.
+
+Gravity continued bringing stars, gas, and dark matter together, eventually forming the first galaxies. Over billions of years, galaxies continued to grow and change through star formation and mergers.
+
+Our Milky Way also developed over a very long period of cosmic evolution. It was not created all at once, but gradually grew as stars, gas, and dark matter came together.
+
+Much later, about 4.6 billion years ago, our Solar System formed. A large cloud of gas and dust collapsed under gravity, with most of the material forming the young Sun. The remaining material formed a rotating disk around it, where planets, moons, asteroids, and other objects eventually developed.
+
+Earth formed about 4.5 billion years ago. This means there is a huge chain of events between the beginning of the Universe and the formation of our planet.
+
+The story is not simply Big Bang to Earth. It is more like the Big Bang, followed by particles, light elements, the first stars, heavier elements, galaxies, later generations of stars, the Solar System, and finally Earth.
+
+Scientists have strong evidence supporting the Big Bang model. This includes the expansion of the Universe, the Cosmic Microwave Background, the observed amounts of light elements, and the large-scale distribution of galaxies and matter.
+
+However, the Big Bang theory does not answer every question. Scientists still do not know exactly what happened at the earliest possible moment or what caused the initial conditions of the Universe. Whether it even makes sense to ask what happened before the Big Bang is also still an open question.
+
+That is what makes the origin and evolution of the Universe one of the most fascinating subjects in modern science.
+</p>
+    
+       <div class="center-image">
+    <img src="Big Bang.jpeg" width="600" height="450">
+</div>
+
+<div class="section-title">🌀 FACTS</div>
+
+    <!-- FACT 16 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>🪐 Forget Saturn — This Possible Planet Has 37 Giant Rings</h4>
+
+            <p>
+J1407b is a mysterious object outside our Solar System that may have a ring system much larger than Saturn's. In 2007, astronomers noticed that its star became unusually dim for about 56 days. One possible explanation was a huge group of rings passing in front of the star.
+
+The best model suggested that the object could have as many as 37 rings, stretching around 90 million kilometres from its center. Some of the gaps between the rings may have been created by moons forming and moving through the ring system.
+
+However, J1407b and its giant rings have not been directly confirmed. Later observations did not find the object again, so scientists are still trying to understand what caused the unusual dimming. For now, J1407b is best described as a possible "Super-Saturn," rather than a confirmed ringed planet.
+</p>>
+        </div>
+
+        <div class="fact-image">
+            <img src="37 ring planet.jpeg" alt="Grandfather Paradox">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 17 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>🌍 A Super-Earth Is Hiding 100 Light-Years Away</h3>
+
+          <p>
+About 100 light-years from Earth, astronomers discovered TOI-1452 b, a planet known as a super-Earth. It is about 67% larger than Earth and around 4.8 times more massive, but it completes one orbit around its star in only about 11 days.
+
+What makes this planet interesting is its density. Scientists think it could contain a large amount of water, which means it might be an ocean world. However, they have not confirmed that its surface is covered with liquid water, and there is no evidence of life there.
+
+Scientists have not taken a direct picture of an ocean on the planet. Instead, they study its size, mass, density and orbit to learn more about it. Future observations may reveal what its atmosphere is made of and whether TOI-1452 b really is the water-rich world scientists suspect.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Super earth.jpeg" alt="Déjà vu">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 18 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>🕳️✨ The Brightest Object Ever Seen Is Powered by a Black Hole</h4>
+
+            <p>
+J0529−4351 is a quasar, an extremely bright object powered by a supermassive black hole at the center of a distant galaxy. As huge amounts of gas and dust fall toward the black hole, they form a very hot disk around it. The material becomes so hot that it releases an enormous amount of energy and radiation.
+
+Astronomers using the European Southern Observatory's Very Large Telescope found that J0529−4351 is the most luminous object ever observed. It is more than 12 billion light-years away and shines with over 500 trillion times the luminosity of our Sun. Its accretion disk is about 7 light-years across, while the black hole is growing at a rate roughly equal to the mass of one Sun every day.
+
+The black hole itself is dark because light cannot escape from inside its event horizon. Most of the incredible brightness comes from the extremely hot material surrounding it. This is what makes quasars so powerful and bright.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Brightest thing ever discovered qusar.jpeg" alt="Quantum Computing">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 19 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>🪐 Saturn Isn't the Only Ringed Planet — Uranus Has 13 Rings Too</h3>
+
+            <p>
+Saturn is usually the first planet people think of when they hear about rings, but Uranus has rings too. It has 13 known rings, and most of them are dark, thin and difficult to see. Scientists discovered them in 1977 while watching Uranus pass in front of a distant star.
+
+Uranus is also tilted almost completely on its side, at about 98 degrees. Because of this unusual tilt, we can sometimes see its rings from the side, making them look extremely thin or almost invisible from Earth.
+
+Uranus is not the only planet besides Saturn with rings. Jupiter and Neptune have rings as well, but Saturn's are much easier to see. Uranus shows that even objects in our own Solar System can be surprisingly difficult to notice.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Uranus.png" alt="SpaceX reusable rocket">
+        </div>
+
+    </div>
+
+
+    <!-- FACT 20 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h4>🌌 A Lonely Planet Is Wandering Through the Milky Way Without a Star</h4>
+
+          <p>
+PSO J318.5−22 is a strange planetary-mass object that travels through the Milky Way without orbiting a star. It is about 80 light-years from Earth and was discovered in 2013. Since it has no nearby star, the area around it would be extremely dark.
+
+Even without a star, PSO J318.5−22 gives off a faint glow. This is because it is still young and hot from when it formed. As it gets older and cools down, its glow will slowly become weaker.
+
+Scientists think there could be many more planets like this wandering through the galaxy. Some may have been thrown out of their original star systems, while others may have formed on their own. The exact way these lonely worlds formed is still being studied.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Loneliest planet.jpeg"
+                 alt="Artificial Intelligence in Space Exploration">
+        </div>
+
+    </div>
+
+   <!-- FACT 21 -->
+    <div class="fact-row">
+
+        <div class="fact-text">
+            <h3>⭐ A Star With More Mass Than the Sun—Packed Into a City-Sized Object</h3>
+
+            <p>
+A neutron star is what remains at the center of a massive star after it explodes in a supernova. Even though it can have about one or two times the mass of the Sun, a typical neutron star is only around 20 kilometers wide. That means an enormous amount of matter is squeezed into something about the size of a city.
+
+Its gravity is incredibly strong, hundreds of billions of times stronger than Earth's. The matter inside is packed so tightly that protons and electrons are pushed together, leaving mostly neutrons.
+
+Some neutron stars also spin hundreds of times every second. These are called pulsars and can send beams of radiation through space as they rotate. Scientists sometimes say that a tiny amount of neutron-star matter could weigh billions of tons, but this is only a comparison because such material could not simply be taken out and brought to Earth.
+</p>
+        </div>
+
+        <div class="fact-image">
+            <img src="Neutron Star.jpeg" alt="SpaceX reusable rocket">
+        </div>
+
+    </div>
+
+
+     <div class="section-title">🌀 THEORY</div>
+
+<h1 class="theory-heading">
+    🌌 WE MAY BE LIVING INSIDE A BLACK HOLE
+</h1>
+       <p class="theory-text">
+Some physicists have suggested a strange idea called black-hole cosmology. The idea is that our entire Universe could exist inside a black hole that belongs to a much larger universe.
+
+According to some versions of this idea, matter falling into a black hole might not simply disappear. Instead, extreme conditions could cause a kind of bounce, creating a new expanding region of space and time. From inside that region, this expansion could look similar to what we call the Big Bang.
+
+Scientists have also looked at an unusual pattern in the rotation of distant galaxies. One possible explanation is that our Universe could have inherited a rotation from a much larger black hole. However, this has not been proven, and other explanations are still being studied.
+
+For now, there is no confirmed evidence that our Universe is inside a black hole. It remains an interesting idea that scientists continue to explore.
+</p>
+    
+       <div class="center-image">
+    <img src="We Maybe living in Black Hole.jpeg" width="600" height="450">
+</div>
+
+</main>
+
+<a href="Codesitehub1.html" class="home-btn">
+    🌌 Solar System
+</a>
+ 
+
+<footer>
+     © 2026 CodeSiteHub | Facts & Theories
+</footer>
+
+</body>
+</html>

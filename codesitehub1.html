@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="24702d09fc1790e05686e8f6ce586721be3f86be" content="24702d09fc1790e05686e8f6ce586721be3f86be" />
+  <meta name="description" content="Explore space facts, black holes, white holes, planets, galaxies, and Big Bang theories on CodeSiteHub.">
+  <title>CodeSiteHub</title>
+  
+  <style>
+
+/* ================================
+   GLOBAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.site-header {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 25px 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+/* CodeSiteHub Logo */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 95px;
+    height: 95px;
+
+    flex-shrink: 0;
+}
+
+.logo-container img {
+    width: 95px;
+    height: 95px;
+
+    object-fit: contain;
+
+    /* Keeps your original square shape */
+    border-radius: 0;
+
+    /* No glow */
+    filter: none;
+
+    /* No hover enlargement */
+    transition: none;
+}
+
+.logo-container img:hover {
+    transform: none;
+    filter: none;
+}
+
+
+/* ================================
+   MAIN HEADING
+================================ */
+
+.site-title {
+    flex: 1;
+
+    text-align: center;
+
+    font-size: 52px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 25px #00bfff,
+        0 0 45px #7c3aed;
+
+    animation: titleGlow 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+
+    from {
+        text-shadow:
+            0 0 8px #00bfff,
+            0 0 18px #00bfff;
+    }
+
+    to {
+        text-shadow:
+            0 0 15px #00e5ff,
+            0 0 35px #00e5ff,
+            0 0 55px #7c3aed;
+    }
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+nav {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 45px;
+
+    margin: 10px 0 30px;
+
+    padding: 16px 25px;
+
+    background: linear-gradient(
+        90deg,
+        #080d2b 0%,
+        #171452 35%,
+        #32165f 50%,
+        #171452 65%,
+        #080d2b 100%
+    );
+
+    border-top: 1px solid rgba(0, 229, 255, 0.35);
+    border-bottom: 1px solid rgba(124, 77, 255, 0.45);
+
+    box-shadow:
+        0 0 15px rgba(0, 191, 255, 0.15),
+        0 0 35px rgba(124, 77, 255, 0.12);
+
+    position: relative;
+}
+
+
+/* Futuristic glowing line */
+
+nav::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -2px;
+    left: 20%;
+    right: 20%;
+
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #00e5ff,
+        #7c4dff,
+        #00e5ff,
+        transparent
+    );
+
+    box-shadow:
+        0 0 8px #00e5ff,
+        0 0 15px #7c4dff;
+}
+
+
+/* Navigation links */
+
+nav a {
+    position: relative;
+
+    color: #dffaff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    padding: 8px 15px;
+
+    transition: 0.3s;
+}
+
+
+/* Hover glow */
+
+nav a:hover {
+    color: #00e5ff;
+
+    text-shadow:
+        0 0 8px #00e5ff,
+        0 0 18px #00e5ff;
+
+    transform: translateY(-2px);
+}
+
+
+/* Small futuristic line under link */
+
+nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: #00e5ff;
+
+    box-shadow: 0 0 8px #00e5ff;
+
+    transform: translateX(-50%);
+
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 80%;
+}
+
+
+/* ================================
+   SPACE & RESEARCH HEADING
+================================ */
+
+.section-heading {
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    font-size: 38px;
+    font-weight: 700;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 8px #00bfff,
+        0 0 20px #00bfff,
+        0 0 35px #7c3aed;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.container {
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 50px 80px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.content {
+    flex: 1;
+    min-width: 350px;
+}
+
+.content h1 {
+    font-size: 55px;
+
+    margin-bottom: 25px;
+
+    color: #61dafb;
+}
+
+.content p {
+    font-size: 19px;
+
+    line-height: 1.9;
+
+    color: #d9d9d9;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   GALAXY GIF
+================================ */
+
+.container img {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+    margin: auto;
+}
+
+
+/* Galaxy GIF - NO GLOW / NO HOVER EFFECT */
+
+.container img[src$=".gif"] {
+    width: 600px;
+
+    max-width: 90vw;
+
+    border-radius: 0;
+
+    filter: none;
+
+    transition: none;
+}
+
+.container img[src$=".gif"]:hover {
+    transform: none;
+    filter: none;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.06);
+
+    backdrop-filter: blur(15px);
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: 0.4s;
+
+    box-shadow:
+        0 0 20px rgba(0, 191, 255, 0.15);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 35px rgba(0, 191, 255, 0.45);
+}
+
+.card h2 {
+    font-size: 18px;
+
+    color: #7dd3fc;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 18px;
+
+    margin: 0;
+
+    color: white;
+}
+
+
+/* ================================
+   PLANET IMAGE
+================================ */
+
+.image {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.image img {
+    width: 430px;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 35px #00bfff);
+    animation: none;
+}
+
+@keyframes floatPlanet {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* ================================
+   EXPLORE UNIVERSE BUTTON
+================================ */
+
+.space-btn {
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-block;
+
+    padding: 18px 55px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    border: 2px solid #4fd1ff;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 0 10px #00bfff,
+        0 0 25px #00bfff,
+        inset 0 0 15px rgba(255, 255, 255, 0.15);
+
+    transition: 0.4s;
+
+    overflow: hidden;
+}
+
+.space-btn::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300%;
+    height: 300%;
+
+    top: -100%;
+    left: -100%;
+
+    background: conic-gradient(
+        transparent,
+        #00e5ff,
+        transparent,
+        #7c4dff,
+        transparent
+    );
+
+    animation: rotate 4s linear infinite;
+
+    z-index: -2;
+}
+
+.space-btn::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 3px;
+
+    background: #051222;
+
+    border-radius: 50px;
+
+    z-index: -1;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.space-btn:hover {
+    transform: translateY(-6px) scale(1.08);
+
+    box-shadow:
+        0 0 20px #00e5ff,
+        0 0 50px #00e5ff,
+        0 0 80px #7c4dff;
+
+    color: #9ffcff;
+}
+
+.space-btn:active {
+    transform: scale(0.96);
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    text-align: center;
+
+    padding: 80px 20px 50px;
+}
+
+.hero-title {
+    font-size: 70px;
+
+    font-weight: 800;
+
+    color: #ffffff;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 25px #00bfff,
+        0 0 45px #7c3aed;
+
+    animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+.hero-subtitle {
+    max-width: 900px;
+
+    margin: 25px auto 0;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+
+    color: #cbd5e1;
+}
+
+@keyframes glow {
+
+    from {
+        text-shadow:
+            0 0 10px #00bfff,
+            0 0 20px #00bfff;
+    }
+
+    to {
+        text-shadow:
+            0 0 20px #00e5ff,
+            0 0 40px #00e5ff,
+            0 0 70px #7c3aed;
+    }
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #2c3e50;
+
+    color: #ecf0f1;
+
+    text-align: center;
+
+    padding: 1rem;
+
+    position: relative;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    margin-top:80px;
+
+}
+
+
+/* ================================
+   TABLET / MOBILE
+================================ */
+
+@media (max-width: 900px) {
+
+    .site-header {
+        padding: 25px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .logo-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .site-title {
+        font-size: 42px;
+
+        letter-spacing: 2px;
+    }
+
+    nav {
+        gap: 10px;
+
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 16px;
+
+        padding: 8px 12px;
+    }
+
+    .container {
+        flex-direction: column;
+
+        padding: 40px 20px;
+    }
+
+    .content h1 {
+        font-size: 42px;
+
+        text-align: center;
+    }
+
+    .content p {
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 19px;
+    }
+
+    .section-heading {
+        font-size: 32px;
+    }
+
+    .image img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+/* ================================
+   SMALL PHONES
+================================ */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 0 5px;
+    }
+
+    .site-header {
+        padding: 20px 10px;
+    }
+
+    .logo-container {
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo-container img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .site-title {
+        font-size: 30px;
+
+        letter-spacing: 1px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+
+        padding: 7px 10px;
+    }
+
+    .section-heading {
+        font-size: 27px;
+    }
+
+    .hero {
+        padding: 50px 15px 40px;
+    }
+
+    .hero-title {
+        font-size: 34px;
+
+        letter-spacing: 2px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+
+    .space-btn {
+        padding: 15px 30px;
+
+        font-size: 16px;
+    }
+
+    .image img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="logo-container">
+    <img src="Codesitehub.jpeg" alt="CodeSiteHub Logo">
+</div>
+
+    <h1 class="site-title">Facts &amp; Theories</h1>
+
+    <div style="width:95px;"></div>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+  <br><br>
+  
+<h2 class="section-heading">Space &amp; Research!</h2>
+
+
+<div class="container">
+    <img src="galaxy.gif" alt="Galaxy">
+</div>
+<br><br>
+
+<div class="container">
+    <a href="Explore Universe.html" class="space-btn">
+        🚀 Explore Universe 🚀
+    </a>
+</div>
+
+<br><br>
+
+
+    <section class="hero">
+
+    <h1 class="hero-title">🚀 Explore the Solar System</h1>
+
+    <p class="hero-subtitle">
+        Discover the wonders of space, explore every planet in our Solar System.
+    </p>
+
+</section>
+
+    <section class="container">
+
+    <!-- Space Image -->
+    <div class="image">
+        <img src="Space.png" alt="Outer Space">
+    </div>
+
+    <!-- Space Information -->
+    <div class="content">
+
+        <h1>🛰️ What is Space?</h1>
+
+        <p>
+        Space is the vast region that exists beyond Earth's atmosphere, where planets, stars, galaxies, comets, asteroids, and countless other celestial objects are found. It is an almost perfect vacuum, meaning it contains very little matter and has no breathable air. Space stretches for billions of light-years and continues expanding as the universe grows. It is home to our Solar System, the Milky Way Galaxy, and billions of other galaxies that scientists are still discovering. The extreme conditions of space, including microgravity, intense radiation, and near-total silence, make it one of the most mysterious places known. Through powerful telescopes and space missions, humans continue exploring space to understand the origins of the universe and search for signs of life beyond Earth.
+        </p>
+
+        <div class="stats">
+
+            <div class="card">
+                <h2>Starts At</h2>
+                <p>100 km above Earth (Kármán Line)</p>
+            </div>
+
+            <div class="card">
+                <h2>Temperature</h2>
+                <p>≈ -270.45°C (Average)</p>
+            </div>
+
+            <div class="card">
+                <h2>Air Pressure</h2>
+                <p>Nearly Zero (Vacuum)</p>
+            </div>
+
+            <div class="card">
+                <h2>Contains</h2>
+                <p>Stars, Planets, Galaxies & Nebulae</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+</section>
+
+    <!-- Galaxy Information -->
+     <section class="container reverse">
+    <div class="content">
+
+        <h1>🌌 Galaxy</h1>
+
+        <p>
+            A galaxy is a massive collection of billions or even trillions of stars, planets, gas, dust, and dark matter, all held together by gravity. Galaxies come in different shapes, including spiral, elliptical, and irregular forms. Our Solar System is located in the Milky Way Galaxy, which contains more than 100 billion stars and spans about 100,000 light-years across. Scientists believe there are hundreds of billions of galaxies in the observable universe, each containing countless worlds waiting to be explored. Galaxies are constantly moving, colliding, and evolving over billions of years, making them some of the largest and most fascinating structures in the cosmos.
+        </p>
+
+        <div class="stats">
+
+            <div class="card">
+                <h2>Our Galaxy</h2>
+                <p>Milky Way 🌌</p>
+            </div>
+
+            <div class="card">
+                <h2>Stars</h2>
+                <p>100–400 Billion</p>
+            </div>
+
+            <div class="card">
+                <h2>Diameter</h2>
+                <p>≈100,000 Light-years</p>
+            </div>
+
+            <div class="card">
+                <h2>Universe</h2>
+                <p>Hundreds of Billions of Galaxies</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Galaxy Image -->
+    <div class="image">
+        <img src="Galaxy.png" alt="Galaxy">
+    </div>
+    </section>
+</section>
+
+<section class="container">
+
+    <!-- Solar System Image -->
+    <div class="image">
+        <img src="SolarSystem.png" alt="Solar System">
+    </div>
+
+    <!-- Solar System Information -->
+    <div class="content">
+
+        <h1>⭐ Solar System</h1>
+
+        <p>
+            The Solar System is a vast collection of celestial objects held together by the Sun's powerful gravity. At its center is the Sun, a massive star that provides light and heat to everything orbiting it. The Solar System consists of eight planets, their moons, dwarf planets such as Pluto, asteroids, comets, meteoroids, and countless smaller objects. Each planet follows its own unique orbit around the Sun, taking different amounts of time to complete one revolution. Formed approximately 4.6 billion years ago, the Solar System is located within the Milky Way Galaxy and occupies only a tiny part of it. Studying the Solar System helps scientists understand the origins of planets, the possibility of life beyond Earth, and the history of our cosmic neighborhood.
+        </p>
+
+        <div class="stats">
+
+            <div class="card">
+                <h2>Central Star</h2>
+                <p>The Sun ☀️</p>
+            </div>
+
+            <div class="card">
+                <h2>Planets</h2>
+                <p>8 Planets</p>
+            </div>
+
+            <div class="card">
+                <h2>Dwarf Planets</h2>
+                <p>5 Recognized</p>
+            </div>
+
+            <div class="card">
+                <h2>Age</h2>
+                <p>≈ 4.6 Billion Years</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="hero">
+
+    <h1 class="hero-title"> Planets</h1>
+
+    <p class="hero-subtitle">
+        Discover the Star,Planets & Dwarf Planet present in our Solar System.
+    </p>
+
+</section>
+
+<section class="container">
+    <div class="image">
+        <img src="Sun.png" alt="Venus">
+    </div>
+
+    <!-- Space Information -->
+    <div class="content">
+
+        <h1>☀️ The Sun</h1>
+
+        <p>The Sun is the star at the center of our Solar System and the primary source of light, heat, and energy for all the planets. It is a massive sphere of hot hydrogen and helium gases that generates energy through nuclear fusion in its core. The Sun's immense gravity holds the entire Solar System together, keeping planets, dwarf planets, asteroids, and comets in their orbits. It contains more than 99.8% of the total mass of the Solar System and is about 109 times wider than Earth. Formed around 4.6 billion years ago, the Sun is expected to continue shining for another 5 billion years before becoming a red giant. Without the Sun's energy, life on Earth would not exist, making it the most important object in our Solar System.
+
+        <div class="stats">
+
+            <div class="card">
+                <h2>Radius</h2>
+                <p>695,700 km</p>
+            </div>
+
+            <div class="card">
+                <h2>Surface Temperature</h2>
+                <p>≈ 5,500°C</p>
+            </div>
+
+            <div class="card">
+                <h2>Core Temperature</h2>
+                <p>≈ 15 Million °C</p>
+            </div>
+
+            <div class="card">
+                <h2>Age</h2>
+                <p>≈ 4.6 Billion Years</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+</section>
+
+<section class="container">
+
+    <div class="content">
+        <h1>☿ Mercury</h1>
+
+<p>
+Mercury is the closest planet to the Sun and the smallest planet in our Solar System. It has a rocky surface covered with craters formed by billions of years of asteroid impacts. Because Mercury has almost no atmosphere, temperatures can reach over 430°C during the day and fall below -180°C at night. A year on Mercury lasts only 88 Earth days, making it the fastest planet to orbit the Sun. Despite its small size, Mercury has a large iron core that generates a weak magnetic field. No spacecraft has ever landed on Mercury due to its extreme environment.
+
+</p>
+
+
+ <div class="stats">
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p>2,439.7 km</p>
+
+</div>
+
+<div class="card">
+
+<h2>Revolution Time</h2>
+
+<p>88 Earth days</p>
+
+</div>
+
+<div class="card">
+
+<h2>Visible Moons</h2>
+
+<p>0 Moons</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gravity</h2>
+
+<p>3.7 m/s²</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+
+    <section class="container reverse">
+    <div class="image">
+        <img src="Mercury.png">
+    </div>
+
+</section>
+</section>
+
+
+<section class="container">
+    <div class="image">
+        <img src="Venus.png" alt="Venus">
+    </div>
+
+    <div class="content">
+        <h1>♀ Venus</h1>
+
+<p>
+
+Venus is the second planet from the Sun and is often called Earth's twin because of its similar size. However, Venus is the hottest planet in the Solar System because its thick carbon dioxide atmosphere traps heat through an extreme greenhouse effect. Surface temperatures reach about 465°C, making it even hotter than Mercury. Venus rotates very slowly and in the opposite direction of most planets. Thick clouds of sulfuric acid cover the planet, hiding its surface from view. It has no natural moons and is one of the brightest objects visible in Earth's night sky.
+
+</p>
+
+<div class="stats">
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p>6,051.8 km</p>
+
+</div>
+
+<div class="card">
+
+<h2>Revolution Time</h2>
+
+<p>225 Earth days</p>
+
+</div>
+
+<div class="card">
+
+<h2>Visible Moons</h2>
+
+<p>0 Moon</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gravity</h2>
+
+<p>8.87 m/s²</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+</section>
+
+<section class="container">
+
+    <div class="content">
+        <h1>🌍 Earth</h1>
+
+<p>
+Earth is the third planet from the Sun and the only known planet that supports life. About 71% of Earth's surface is covered by oceans, while the remaining land contains mountains, forests, deserts, and cities. The atmosphere protects life by blocking harmful radiation and maintaining suitable temperatures. Earth rotates once every 24 hours, creating day and night, and completes one revolution around the Sun in approximately 365.25 days. Its magnetic field shields the planet from solar winds, and its Moon helps stabilize Earth's rotation and influences ocean tides. Earth remains the center of human exploration and scientific discovery.
+
+</p>
+
+
+ <div class="stats">
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p>6,371 km</p>
+
+</div>
+
+<div class="card">
+
+<h2>Revolution Time</h2>
+
+<p>365.25 days</p>
+
+</div>
+
+<div class="card">
+
+<h2>Visible Moons</h2>
+
+<p>1 Moon</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gravity</h2>
+
+<p>9.81 m/s²</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+
+  <section class="container reverse">
+    <div class="image">
+        <img src="Earth.png">
+    </div>
+
+</section>
+</section>
+
+
+<section class="container">
+    <div class="image">
+        <img src="Mars.png" alt="Venus">
+    </div>
+
+    <div class="content">
+        <h1>🔴 Mars</h1>
+
+<p>
+Mars is known as the Red Planet because of the iron oxide, or rust, covering its surface. It has the largest volcano in the Solar System, Olympus Mons, and a giant canyon called Valles Marineris. Scientists believe Mars once had rivers and lakes, making it a major target in the search for ancient life. Its thin atmosphere is mostly carbon dioxide, and temperatures are usually well below freezing. Mars experiences dust storms that can cover the entire planet. Many space agencies are planning future human missions to Mars.
+
+</p>
+
+
+ <div class="stats">
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p>3,389.5 km</p>
+
+</div>
+
+<div class="card">
+
+<h2>Revolution Time</h2>
+
+<p>687 Earth days</p>
+
+</div>
+
+<div class="card">
+
+<h2>Visible Moons</h2>
+
+<p>2 Moons</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gravity</h2>
+
+<p>3.71 m/s²</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+</section>
+</section>
+
+<section class="container reverse">
+
+    <div class="content">
+        <h1>🟠 Jupiter</h1>
+
+<p>
+
+Jupiter is the largest planet in the Solar System and is made mostly of hydrogen and helium. It is famous for the Great Red Spot, a giant storm that has been active for centuries. Jupiter has a very strong magnetic field and dozens of known moons, including Ganymede, the largest moon in the Solar System. The planet has no solid surface because it is a gas giant. Jupiter's enormous gravity helps influence the movement of many asteroids and comets. Despite its huge size, Jupiter rotates in less than 10 hours.
+
+</p>
+
+<div class="stats">
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p>69,911 km</p>
+
+</div>
+
+<div class="card">
+
+<h2>Revolution Time</h2>
+
+<p>11.86 Earth years</p>
+
+</div>
+
+<div class="card">
+
+<h2>Visible Moons</h2>
+
+<p>95 known Moons</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gravity</h2>
+
+<p>24.79 m/s²</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+    <div class="image">
+        <img src="Jupiter.png" alt="Jupiter">
+    </div>
+</section>
+
+<section class="container">
+    <div class="image">
+        <img src="Saturn.png" alt="Venus">
+    </div>
+
+    <div class="content">
+        <h1>🪐 Saturn</h1>
+
+<p>
+
+Saturn is best known for its spectacular ring system, made mostly of ice and rock particles. It is the second-largest planet in the Solar System and is composed mainly of hydrogen and helium. Saturn is so light that it would float if there were an ocean large enough to hold it. The planet has many fascinating moons, including Titan, which has lakes and rivers of liquid methane. Powerful winds and storms move through Saturn's atmosphere at incredible speeds. Its beautiful rings continue to amaze astronomers around the world.
+
+</p>
+
+
+ <div class="stats">
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p>58,232 km</p>
+
+</div>
+
+<div class="card">
+
+<h2>Revolution Time</h2>
+
+<p>29.45 Earth years</p>
+
+</div>
+
+<div class="card">
+
+<h2>Visible Moons</h2>
+
+<p>146 known Moon</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gravity</h2>
+
+<p>10.44 m/s²</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+ </section>
+
+ <section class="container reverse">
+ <section class="container">
+
+    <div class="content">
+        <h1>🔵 Uranus</h1>
+
+<p>
+Uranus is the seventh planet from the Sun and has a pale blue-green color due to methane in its atmosphere. It is unique because it rotates almost completely on its side, giving it very unusual seasons that last for decades. Uranus is an ice giant composed of water, ammonia, and methane ices beneath its atmosphere. It has a faint ring system and many natural moons. Temperatures on Uranus are among the coldest found anywhere in the Solar System. Scientists continue to study its unusual magnetic field and internal structure.
+
+</p>
+
+
+ <div class="stats">
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p>25,362 km</p>
+
+</div>
+
+<div class="card">
+
+<h2>Revolution Time</h2>
+
+<p>84 Earth years</p>
+
+</div>
+
+<div class="card">
+
+<h2>Visible Moons</h2>
+
+<p>28 known Moons</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gravity</h2>
+
+<p>8.69 m/s²</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+    <div class="image">
+        <img src="Uranus.png">
+    </div>
+
+</section>
+</section>
+
+
+<section class="container">
+    <div class="image">
+        <img src="Neptune.png" alt="Venus">
+    </div>
+
+    <div class="content">
+        <h1>🔷 Neptune</h1>
+
+<p>
+
+Neptune is the eighth and farthest recognized planet from the Sun. It is a deep blue ice giant with the fastest winds in the Solar System, reaching speeds of more than 2,000 km/h. Neptune's atmosphere is mainly hydrogen, helium, and methane, which gives the planet its striking blue appearance. It has faint rings and several moons, with Triton being its largest. Because Neptune is so far from the Sun, it receives very little sunlight and remains extremely cold. It takes more than 160 Earth years to complete a single orbit around the Sun.
+
+</p>
+
+<div class="stats">
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p>24,622 km</p>
+
+</div>
+
+<div class="card">
+
+<h2>Revolution Time</h2>
+
+<p>164.8 Earth years</p>
+
+</div>
+
+<div class="card">
+
+<h2>Visible Moons</h2>
+
+<p>16 known Moon</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gravity</h2>
+
+<p>11.15 m/s²</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+</section>
+
+<section class="container reverse">
+<section class="container">
+
+    <div class="content">
+        <h1>❄️ Pluto (Dwarf Planet)</h1>
+
+<p>
+Pluto is a dwarf planet located in the distant Kuiper Belt, beyond the orbit of Neptune. It was discovered in 1930 and was considered the ninth planet in our Solar System until 2006, when it was reclassified as a dwarf planet by the International Astronomical Union. Pluto has a frozen surface made of nitrogen, methane, and water ice, giving it a unique and colorful appearance. Despite its small size, it has mountains, glaciers, and a thin atmosphere that changes as it moves around the Sun. In 2015, NASA's New Horizons spacecraft captured the first close-up images of Pluto, revealing a surprisingly active and complex world. Today, Pluto remains one of the most fascinating objects in the outer Solar System and continues to be an important subject of space exploration.
+
+</p>
+
+
+ <div class="stats">
+
+<div class="card">
+
+<h2>Radius</h2>
+
+<p>1,188.3 km</p>
+
+</div>
+
+<div class="card">
+
+<h2>Revolution Time</h2>
+
+<p>248 Earth years</p>
+
+</div>
+
+<div class="card">
+
+<h2>Visible Moons</h2>
+
+<p>5 known Moon</p>
+
+</div>
+
+<div class="card">
+
+<h2>Gravity</h2>
+
+<p>0.62 m/s²</p>
+
+ </div>
+
+ </div>
+
+ </div>
+
+    <div class="image">
+        <img src="Pluto.png">
+    </div>
+
+</section>
+</section>
+</section>
+
+</div>
+
+<footer>
+     © 2026 CodeSiteHub | Facts & Theories
+</footer>
+
+</body>
+</html>

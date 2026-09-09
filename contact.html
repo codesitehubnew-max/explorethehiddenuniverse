@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta name="24702d09fc1790e05686e8f6ce586721be3f86be" content="24702d09fc1790e05686e8f6ce586721be3f86be" />
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Contact CodeSiteHub for questions, suggestions, corrections, feedback and inquiries.">
+
+<title>Contact | CodeSiteHub</title>
+
+
+<style>
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #02030a;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(0,191,255,.12),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(124,58,237,.13),
+            transparent 30%
+        );
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 25px 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.logo {
+
+    width: 80px;
+
+    height: 80px;
+
+    object-fit: contain;
+
+}
+
+
+.brand {
+
+    flex: 1;
+
+    text-align: center;
+
+}
+
+
+.brand h1 {
+
+    font-size: 46px;
+
+    letter-spacing: 4px;
+
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 25px #00bfff,
+        0 0 45px #7c3aed;
+
+}
+
+
+.brand p {
+
+    margin-top: 7px;
+
+    color: #94a3b8;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 45px;
+
+    padding: 17px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #080d2b,
+            #171452,
+            #32165f,
+            #171452,
+            #080d2b
+        );
+
+    border-top:
+        1px solid rgba(0,229,255,.3);
+
+    border-bottom:
+        1px solid rgba(124,77,255,.4);
+
+}
+
+
+nav a {
+
+    color: #dffaff;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+nav a:hover,
+nav a.active {
+
+    color: #00e5ff;
+
+    text-shadow:
+        0 0 8px #00e5ff,
+        0 0 18px #00e5ff;
+
+}
+
+
+/* =========================================
+   PAGE HERO
+========================================= */
+
+.page-hero {
+
+    text-align: center;
+
+    padding: 80px 20px 50px;
+
+}
+
+
+.page-hero h2 {
+
+    font-size: 60px;
+
+    letter-spacing: 3px;
+
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 30px #00bfff,
+        0 0 55px #7c3aed;
+
+}
+
+
+.page-hero p {
+
+    max-width: 750px;
+
+    margin: 25px auto 0;
+
+    color: #cbd5e1;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   CONTACT CONTAINER
+========================================= */
+
+.contact-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 30px 20px 80px;
+
+}
+
+
+.contact-box {
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    border:
+        1px solid rgba(0,229,255,.18);
+
+    box-shadow:
+        0 0 40px rgba(0,191,255,.08);
+
+}
+
+
+.contact-box h3 {
+
+    font-size: 28px;
+
+    color: #61dafb;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contact-box > p {
+
+    color: #cbd5e1;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin: 30px 0;
+
+}
+
+
+.contact-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 22px;
+
+    border-radius: 16px;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid rgba(0,229,255,.15);
+
+    transition: .3s;
+
+}
+
+
+.contact-item:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #00e5ff;
+
+    box-shadow:
+        0 0 25px rgba(0,229,255,.18);
+
+}
+
+
+.contact-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(0,229,255,.08);
+
+    font-size: 26px;
+
+}
+
+
+.contact-item h4 {
+
+    color: #61dafb;
+
+    margin-bottom: 7px;
+
+    font-size: 17px;
+
+}
+
+
+.contact-item a {
+
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    word-break: break-word;
+
+}
+
+
+.contact-item a:hover {
+
+    color: #00e5ff;
+
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.form-divider {
+
+    height: 1px;
+
+    margin: 40px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0,229,255,.45),
+            transparent
+        );
+
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+form {
+
+    margin-top: 25px;
+
+}
+
+
+label {
+
+    display: block;
+
+    margin-top: 20px;
+
+    margin-bottom: 8px;
+
+    color: #dffaff;
+
+    font-weight: 600;
+
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border-radius: 10px;
+
+    border:
+        1px solid rgba(0,229,255,.2);
+
+    background:
+        rgba(0,0,0,.35);
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: .3s;
+
+}
+
+
+input::placeholder,
+textarea::placeholder {
+
+    color: #64748b;
+
+}
+
+
+input:focus,
+textarea:focus {
+
+    border-color: #00e5ff;
+
+    box-shadow:
+        0 0 15px rgba(0,229,255,.15);
+
+}
+
+
+textarea {
+
+    min-height: 170px;
+
+    resize: vertical;
+
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+form button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #00bfff;
+
+    color: #02030a;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow:
+        0 0 15px rgba(0,191,255,.5);
+
+}
+
+
+form button:hover {
+
+    transform: translateY(-3px);
+
+    background: #00e5ff;
+
+    box-shadow:
+        0 0 25px #00e5ff,
+        0 0 45px rgba(0,191,255,.5);
+
+}
+
+
+/* =========================================
+   NOTE
+========================================= */
+
+.note {
+
+    margin-top: 30px;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    background:
+        rgba(0,191,255,.05);
+
+    border-left:
+        3px solid #00bfff;
+
+    color: #94a3b8;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background: #080d18;
+
+    border-top:
+        1px solid rgba(0,229,255,.15);
+
+    color: #94a3b8;
+
+}
+
+
+footer strong {
+
+    color: #00e5ff;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width: 700px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 25px;
+
+    }
+
+
+    .brand h1 {
+
+        font-size: 34px;
+
+    }
+
+
+    nav {
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .page-hero h2 {
+
+        font-size: 42px;
+
+    }
+
+
+    .page-hero p {
+
+        font-size: 17px;
+
+    }
+
+
+    .contact-box {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .contact-info {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media(max-width: 450px) {
+
+    .brand h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    nav a {
+
+        font-size: 15px;
+
+    }
+
+
+    .page-hero {
+
+        padding-top: 55px;
+
+    }
+
+
+    .page-hero h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+/* =========================================
+   FLOATING HOME BUTTON
+========================================= */
+
+.home-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 14px 18px;
+
+    background: linear-gradient(135deg, #00bfff, #7c3aed);
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 0 15px rgba(0,191,255,.45),
+        0 0 30px rgba(124,58,237,.35);
+
+    transition: .3s ease;
+
+    z-index: 99999;
+}
+
+.home-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow:
+        0 0 25px #00e5ff,
+        0 0 45px #7c3aed;
+}
+
+.home-btn:active {
+    transform: scale(.96);
+}
+
+/* Mobile */
+
+@media (max-width:600px){
+
+    .home-btn{
+
+        bottom:65px;
+        right:18px;
+
+        padding:12px 16px;
+
+        font-size:14px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header>
+
+    <img
+        src="Codesitehub.jpeg"
+        class="logo"
+        alt="CodeSiteHub Logo"
+    >
+
+
+    <div class="brand">
+
+        <h1>CodeSiteHub</h1>
+
+        <p>Facts & Theories</p>
+
+    </div>
+
+
+    <div style="width:80px;"></div>
+
+</header>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<nav>
+
+    <a href="home.html">
+        Home
+    </a>
+
+    <a href="about.html">
+        About
+    </a>
+
+    <a href="contact.html" class="active">
+        Contact
+    </a>
+
+</nav>
+
+
+<!-- =========================================
+     PAGE TITLE
+========================================= -->
+
+<section class="page-hero">
+
+    <h2>
+        📡 Contact Us
+    </h2>
+
+
+    <p>
+
+        Have a question, suggestion, correction, or feedback?
+        Get in touch with CodeSiteHub.
+
+    </p>
+
+</section>
+
+
+<!-- =========================================
+     CONTACT SECTION
+========================================= -->
+
+<section class="contact-container">
+
+    <div class="contact-box">
+
+
+        <h3>
+            🌌 Get in Touch
+        </h3>
+
+
+        <p>
+
+            CodeSiteHub aims to provide interesting and
+            educational information about space and the universe.
+            If you notice an error or have a suggestion,
+            feel free to contact us.
+
+        </p>
+
+
+        <!-- CONTACT DETAILS -->
+
+        <div class="contact-info">
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📧
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Email
+                    </h4>
+
+
+                    <a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=codesitehub@gmail.com"
+                            target="_blank"
+                             rel="noopener noreferrer"
+                      >                
+                          codesitehub@gmail.com
+                                      </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📸
+                </div>
+
+
+                <div>
+
+                    <h4>
+                        Instagram
+                    </h4>
+
+
+                    <a
+                        href="https://www.instagram.com/codesitehub/?hl=en/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
+                        CodeSiteHub
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- DIVIDER -->
+
+        <div class="form-divider"></div>
+
+
+        <!-- FORM -->
+
+        <h3>
+            ✉️ Send Us a Message
+        </h3>
+
+
+        <p>
+
+            Send us your question, feedback, suggestion,
+            or information correction using the form below.
+
+        </p>
+
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact.html?sent=true">
+
+    <input type="hidden" name="form-name" value="contact">
+
+    <p style="display:none">
+        <label>Don't fill this out: <input name="bot-field"></label>
+    </p>
+
+    <label>Name</label>
+    <input type="text" name="name" required>
+
+    <label>Email</label>
+    <input type="email" name="email" required>
+
+    <label>Message</label>
+    <textarea name="message" required></textarea>
+
+    <button type="submit">🚀 Send Message</button>
+
+</form>
+
+<div id="contact-success" class="note" style="display:none; border-left-color:#00e5ff;">
+    ✅ Thank you! Your message has been sent successfully.
+</div>
+
+        <!-- INFORMATION NOTE -->
+
+        <div class="note">
+
+            💡 If you believe that information on CodeSiteHub
+            is incorrect, please mention the specific topic
+            or page so that it can be reviewed.
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<a href="Codesitehub1.html" class="home-btn">
+    🌌 Solar System
+</a>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    © 2026
+    <strong>CodeSiteHub</strong>
+    | Facts & Theories
+
+</footer>
+
+
+<script>
+    if (new URLSearchParams(window.location.search).get('sent') === 'true') {
+        document.getElementById('contact-success').style.display = 'block';
+    }
+</script>
+
+</body>
+
+</html>
